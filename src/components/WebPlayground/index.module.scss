@@ -1,0 +1,79 @@
+
+.root {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.editors_area {
+
+    display: grid;
+    gap: 1rem;
+    aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .actions {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+
+            button {
+                padding: 0.1rem 0.25rem;
+            }
+        }
+    }
+
+    details.editor_item {
+        border: 1px solid #cdcdcd;
+
+        summary {
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.25rem;
+        }
+    }
+}
+
+.preview_area {
+
+    iframe {
+        border: 1px solid #cdcdcd;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .console {
+        min-height: 100px;
+        max-height: 200px;
+        overflow: scroll;
+        background-color: #f2f1f1;
+
+        display: flex;
+        flex-direction: column;
+
+        > span {
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: center;
+            padding: 0.25rem 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 0;
+            padding-bottom: 1rem;
+        }
+        li {
+            margin: 0;
+            padding: 0 1rem;
+            list-style: none;
+        }
+    }
+}
